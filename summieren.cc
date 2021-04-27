@@ -14,10 +14,7 @@ int main() {
     fin >> zahl1;
     fin >> zahl2;
     fout << zahl1 + zahl2;
-    fout << "\n";
     index++;
   }
-  
-  fout << zahl1 + zahl2;
   fin.close(); 
 }
