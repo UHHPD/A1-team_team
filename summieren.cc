@@ -1,13 +1,20 @@
 #include <fstream>
+#include <iostream>
 
-std::ifstream fin("daten.txt");
-int zahl1;
-int zahl2;
-int summe;
+int main() {
 
-fin >> zahl1;
-fin >> zahl2;
-
-std::cout << zahl1;
+  std::ifstream fin("daten.txt");
+  std::ofstream fout("datensumme.txt");
+  int zahl1;
+  int zahl2;
 
 
+  while(!fin.eof()) {
+    fin >> zahl1;
+    fin >> zahl2;
+    fout << zahl1 + zahl2;
+    fout << "\n";
+  }
+ 
+  fin.close(); 
+}
