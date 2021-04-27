@@ -1,2 +1,5 @@
-hallo wie gehts
-gut danke und dir ? 
+#include <iostream>
+
+int main() {
+  std::cout << "Hallo Welt!" << std::ends;
+}
