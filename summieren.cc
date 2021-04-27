@@ -10,14 +10,14 @@ int main() {
   int zahl2;
 
 
-  while(index < 233) {
+  while(index < 234) {
     fin >> zahl1;
     fin >> zahl2;
     fout << zahl1 + zahl2;
     fout << "\n";
     index++;
   }
-  fout << zahl1 + zahl2;
+  //fout << zahl1 + zahl2;
   fin.close(); 
 
 }
